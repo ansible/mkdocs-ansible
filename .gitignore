@@ -1,2 +1,8 @@
-dist
 **/*.egg-info
+.DS_Store
+.tox
+__pycache__
+build/
+dist
+site
+src/mkdocs_ansible/_version.py

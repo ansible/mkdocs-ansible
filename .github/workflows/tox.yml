@@ -2,30 +2,19 @@
 name: tox
 
 on:
-  create: # is used for publishing to PyPI and TestPyPI
-    tags: # any tag regardless of its name, no branches
-      - "**"
   push: # only publishes pushes to the main branch to TestPyPI
     branches: # any integration branch but not tag
       - "main"
   pull_request:
     branches:
       - "main"
-  release:
-    types:
-      - published # It seems that you can publish directly without creating
-  schedule:
-    - cron: 1 0 * * * # Run daily at 0:01 UTC
-  # Run every Friday at 18:02 UTC
-  # https://crontab.guru/#2_18_*_*_5
-  # - cron: 2 18 * * 5
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
   cancel-in-progress: true
 
 env:
-  FORCE_COLOR: 1 # tox, pytest, ansible-lint
+  FORCE_COLOR: 1
   PY_COLORS: 1
 
 jobs:
@@ -43,10 +32,7 @@ jobs:
           max_python: "3.11"
           other_names: |
             lint
-            pkg,hook,docs
-            schemas
-            eco
-            py-devel
+            docs
           # platforms: linux,macos
 
   build:
@@ -59,29 +45,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.pre.outputs.matrix) }}
-      # max-parallel: 5
-      # The matrix testing goal is to cover the *most likely* environments
-      # which are expected to be used by users in production. Avoid adding a
-      # combination unless there are good reasons to test it, like having
-      # proof that we failed to catch a bug by not running it. Using
-      # distribution should be preferred instead of custom builds.
     env:
-      # vars safe to be passed to wsl:
-      WSLENV: FORCE_COLOR:PYTEST_REQPASS:TOXENV:GITHUB_STEP_SUMMARY
-      # Number of expected test passes, safety measure for accidental skip of
-      # tests. Update value if you add/remove tests.
-      PYTEST_REQPASS: 801
+      PYTEST_REQPASS: 0
     steps:
-      - name: Activate WSL1
-        if: "contains(matrix.shell, 'wsl')"
-        uses: Vampire/setup-wsl@v2
-
-      - name: MacOS workaround for https://github.com/actions/virtual-environments/issues/1187
-        if: ${{ matrix.os == 'macOS-latest' }}
-        run: |
-          sudo sysctl -w net.link.generic.system.hwcksum_tx=0
-          sudo sysctl -w net.link.generic.system.hwcksum_rx=0
-
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0 # needed by setuptools-scm
@@ -105,20 +71,10 @@ jobs:
           key: galaxy-${{ hashFiles('examples/playbooks/collections/requirements.yml') }}
 
       - name: Set up Python ${{ matrix.python_version || '3.9' }}
-        if: "!contains(matrix.shell, 'wsl')"
         uses: actions/setup-python@v4
         with:
           cache: pip
           python-version: ${{ matrix.python_version || '3.9' }}
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: "npm"
-          cache-dependency-path: test/schemas/package-lock.json
-
-      - name: Run ./tools/test-setup.sh
-        run: ./tools/test-setup.sh
 
       - name: Install tox
         run: |
@@ -160,7 +116,6 @@ jobs:
 
       - name: Report failure if git reports dirty status
         run: |
-          git checkout HEAD -- src/ansiblelint/schemas/__store__.json
           if [[ -n $(git status -s) ]]; then
             # shellcheck disable=SC2016
             echo -n '::error file=git-status::'
@@ -168,42 +123,6 @@ jobs:
             exit 99
           fi
         # https://github.com/actions/toolkit/issues/193
-  codeql:
-    name: codeql
-    runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-
-    strategy:
-      fail-fast: false
-      matrix:
-        language: ["python"]
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      # Initializes the CodeQL tools for scanning.
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v2
-        with:
-          languages: ${{ matrix.language }}
-          # If you wish to specify custom queries, you can do so here or in a config file.
-          # By default, queries listed here will override any specified in a config file.
-          # Prefix the list here with "+" to use these queries and those in the config file.
-
-          # Details on CodeQL's query packs refer to : https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
-          # queries: security-extended,security-and-quality
-
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@v2
-
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v2
-        with:
-          category: "/language:${{matrix.language}}"
 
   check: # This job does nothing and is only used for the branch protection
     if: always()

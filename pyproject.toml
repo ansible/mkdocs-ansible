@@ -1,0 +1,58 @@
+[build-system]
+requires = [
+  "setuptools >= 63.0.0", # required by pyproject+setuptools_scm integration
+  "setuptools_scm[toml] >= 7.0.5", # required for "no-local-version" scheme
+
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+requires-python = ">=3.9"
+dynamic = ["version", "dependencies", "optional-dependencies"]
+name = "mkdocs-ansible"
+description = "Ansible MkDocs Theme based on mkdocs-material"
+readme = "docs/README.md"
+authors = [{ "name" = "Ansible by Red Hat", "email" = "info@ansible.com" }]
+maintainers = [{ "name" = "Ansible by Red Hat", "email" = "info@ansible.com" }]
+license = { text = "MIT" }
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Web Environment",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: JavaScript",
+  "Programming Language :: Python",
+  "Topic :: Documentation",
+  "Topic :: Software Development :: Documentation",
+  "Topic :: Text Processing :: Markup :: HTML",
+]
+keywords = ["ansible", "mkdocs", "theme"]
+
+[project.urls]
+homepage = "https://github.com/ansible/mkdocs-ansible"
+documentation = "https://mkdocs-ansible.readthedocs.io/"
+repository = "https://github.com/ansible/mkdocs-ansible"
+changelog = "https://github.com/ansible/mkdocs-ansible/releases"
+
+[project.entry-points."mkdocs.themes"]
+ansible = "mkdocs_ansible"
+
+[[tool.mypy.overrides]]
+module = ["mkdocs_ansible._version"]
+
+[tool.pylint.MASTER]
+ignore-paths = "^src/.*/(_version|_vendor).*$"
+
+[tool.setuptools.dynamic]
+optional-dependencies.test = { file = [".config/requirements-test.txt"] }
+optional-dependencies.lock = { file = [".config/requirements-lock.txt"] }
+dependencies = { file = [".config/requirements.in"] }
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+write_to = "src/mkdocs_ansible/_version.py"
