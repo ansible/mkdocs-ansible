@@ -1,0 +1,33 @@
+---
+extends: material
+
+language: en
+direction: ltr
+features: []
+palette:
+  - scheme: default
+    primary: teal
+    accent: teal
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - scheme: slate
+    primary: teal
+    accent: teal
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+
+font:
+  # Must be a valid Google Font name from https://fonts.google.com/
+  # text: Roboto
+  # code: Roboto Mono
+  text: Red Hat Display
+  code: Red Hat Mono
+# From Material 5.x on, icons are inlined into the HTML and CSS as SVGs. Some
+# icons that are part of the HTML can be configured and replaced
+icon:
+
+favicon: assets/images/favicon.ico
+static_templates:
+  - 404.html
