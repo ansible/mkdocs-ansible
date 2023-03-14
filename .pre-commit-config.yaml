@@ -12,10 +12,6 @@ ci:
     - pip-compile
     - schemas
   submodules: true
-exclude: >
-  (?x)^(
-    src/mkdocs_ansible/_version.py
-  )$
 repos:
   - repo: meta
     hooks:
