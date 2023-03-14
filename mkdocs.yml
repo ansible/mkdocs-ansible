@@ -41,9 +41,6 @@ theme:
     - search.suggest
     - toc.follow
     # - toc.integrate
-  # favicon: assets/favicon.png
-  icon:
-    logo: logo
 
 # Plugins
 plugins:
