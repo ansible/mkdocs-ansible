@@ -35,7 +35,7 @@ mkdocs-material==9.1.5
 mkdocs-material-extensions==1.1.1
 mkdocs-minify-plugin==0.6.4
 mkdocs-monorepo-plugin==1.0.4
-mkdocstrings==0.21.1
+mkdocstrings==0.21.2
 mkdocstrings-python==0.9.0
 packaging==23.0
 pillow==9.5.0
