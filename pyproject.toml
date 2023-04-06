@@ -43,7 +43,6 @@ module = ["mkdocs_ansible._version"]
 ignore-paths = "^src/.*/(_version|_vendor).*$"
 
 [tool.setuptools.dynamic]
-optional-dependencies.test = { file = [".config/requirements-test.txt"] }
 optional-dependencies.lock = { file = [".config/requirements.txt"] }
 dependencies = { file = [".config/requirements.in"] }
 
