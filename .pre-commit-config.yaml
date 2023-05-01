@@ -17,7 +17,7 @@ repos:
       - id: check-useless-excludes
   - repo: https://github.com/pre-commit/mirrors-prettier
     # keep it before yamllint
-    rev: v3.0.0-alpha.6
+    rev: v3.0.0-alpha.9-for-vscode
     hooks:
       - id: prettier
         always_run: true
@@ -58,7 +58,7 @@ repos:
         additional_dependencies:
           - tomli
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.30.0
+    rev: v1.31.0
     hooks:
       - id: yamllint
         files: \.(yaml|yml)$
@@ -90,12 +90,12 @@ repos:
           - flake8-future-annotations>=0.0.3
   - repo: https://github.com/asottile/pyupgrade
     # keep it after flake8
-    rev: v3.3.1
+    rev: v3.3.2
     hooks:
       - id: pyupgrade
         args: ["--py39-plus"]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.1.1
+    rev: v1.2.0
     hooks:
       - id: mypy
         # empty args needed in order to match mypy cli behavior
@@ -109,7 +109,7 @@ repos:
           - --output-format=colorized
         additional_dependencies: []
   - repo: https://github.com/jazzband/pip-tools
-    rev: 6.12.3
+    rev: 6.13.0
     hooks:
       - id: pip-compile
         name: lock
