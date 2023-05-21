@@ -48,8 +48,7 @@ warn_unused_ignores = false
 
 [[tool.mypy.overrides]]
 module = ["mkdocs_ansible"]
-warn_unused_ignores = false  # https://github.com/python/mypy/issues/13201
-
+warn_unused_ignores = false # https://github.com/python/mypy/issues/13201
 
 [tool.pylint.MASTER]
 ignore-paths = "^src/.*/(_version|_vendor).*$"
