@@ -36,8 +36,20 @@ changelog = "https://github.com/ansible/mkdocs-ansible/releases"
 [project.entry-points."mkdocs.themes"]
 ansible = "mkdocs_ansible"
 
+[tool.mypy]
+strict = true
+python_version = "3.9"
+warn_unused_configs = true
+exclude = ['build']
+
 [[tool.mypy.overrides]]
 module = ["mkdocs_ansible._version"]
+warn_unused_ignores = false
+
+[[tool.mypy.overrides]]
+module = ["mkdocs_ansible"]
+warn_unused_ignores = false  # https://github.com/python/mypy/issues/13201
+
 
 [tool.pylint.MASTER]
 ignore-paths = "^src/.*/(_version|_vendor).*$"
