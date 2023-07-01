@@ -9,5 +9,5 @@ Some of the projects that use this theme are:
 - [ansible-devtools](https://ansible-devtools.readthedocs.io/)
 - [ansible-language-server](https://ansible-language-server.readthedocs.io/)
 - [ansible-lint](https://ansible-lint.readthedocs.io/)
-- [ansible-navigator](https://ansible-navigator.readthedocs.io/en/latest/)
+- [ansible-navigator](https://ansible-navigator.readthedocs.io/)
 - [molecule](https://molecule.readthedocs.io/)
