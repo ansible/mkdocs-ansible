@@ -92,19 +92,19 @@ jobs:
       - name: tox -e ${{ matrix.passed_name }}
         run: python3 -m tox -e ${{ matrix.passed_name }}
 
-      - name: Combine coverage data
-        if: ${{ startsWith(matrix.passed_name, 'py') }}
-        # produce a single .coverage file at repo root
-        run: tox -e coverage
+      # - name: Combine coverage data
+      #   if: ${{ startsWith(matrix.passed_name, 'py') }}
+      #   # produce a single .coverage file at repo root
+      #   run: tox -e coverage
 
-      - name: Upload coverage data
-        if: ${{ startsWith(matrix.passed_name, 'py') }}
-        uses: codecov/codecov-action@v3
-        with:
-          name: ${{ matrix.passed_name }}
-          fail_ci_if_error: false # see https://github.com/codecov/codecov-action/issues/598
-          token: ${{ secrets.CODECOV_TOKEN }}
-          verbose: true # optional (default = false)
+      # - name: Upload coverage data
+      #   if: ${{ startsWith(matrix.passed_name, 'py') }}
+      #   uses: codecov/codecov-action@v3
+      #   with:
+      #     name: ${{ matrix.passed_name }}
+      #     fail_ci_if_error: false # see https://github.com/codecov/codecov-action/issues/598
+      #     token: ${{ secrets.CODECOV_TOKEN }}
+      #     verbose: true # optional (default = false)
 
       - name: Archive logs
         uses: actions/upload-artifact@v3
