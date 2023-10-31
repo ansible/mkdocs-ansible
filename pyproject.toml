@@ -18,6 +18,7 @@ license = { text = "MIT" }
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Environment :: Web Environment",
+  "Framework :: MkDocs",
   "License :: OSI Approved :: MIT License",
   "Programming Language :: JavaScript",
   "Programming Language :: Python",
