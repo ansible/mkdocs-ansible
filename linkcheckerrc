@@ -1,0 +1,12 @@
+# spell-checker:ignore checkextern robotstxt localwebroot ignorewarnings
+[filtering]
+checkextern=1
+ignore=
+  xml.gz$
+  404.html
+# https://github.com/squidfunk/mkdocs-material/pull/6386
+ignorewarnings=http-redirected
+
+[checking]
+robotstxt=0
+localwebroot=./

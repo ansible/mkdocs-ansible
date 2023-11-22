@@ -1,6 +1,6 @@
 ---
 site_name: Ansible MkDocs Theme
-site_url: https://mkdocs-ansible.readthedocs.io/
+site_url: https://ansible.readthedocs.io/projects/mkdocs-ansible/
 site_author: Ansible
 site_description: >-
   This mkdocs theme is based on mkdocs-material and aims to provide a
@@ -97,3 +97,13 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    absolute_links: warn
+    unrecognized_links: warn

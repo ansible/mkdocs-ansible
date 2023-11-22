@@ -30,7 +30,7 @@ keywords = ["ansible", "mkdocs", "theme"]
 
 [project.urls]
 homepage = "https://github.com/ansible/mkdocs-ansible"
-documentation = "https://mkdocs-ansible.readthedocs.io/"
+documentation = "https://ansible.readthedocs.io/projects/mkdocs-ansible/"
 repository = "https://github.com/ansible/mkdocs-ansible"
 changelog = "https://github.com/ansible/mkdocs-ansible/releases"
 

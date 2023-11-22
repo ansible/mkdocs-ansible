@@ -5,9 +5,9 @@ look and feel for any project related to [Ansible](https://docs.ansible.com/) ec
 
 Some of the projects that use this theme are:
 
-- [ansible-compat](https://ansible-compat.readthedocs.io/)
-- [ansible-devtools](https://ansible-devtools.readthedocs.io/)
-- [ansible-language-server](https://ansible-language-server.readthedocs.io/)
-- [ansible-lint](https://ansible-lint.readthedocs.io/)
-- [ansible-navigator](https://ansible-navigator.readthedocs.io/)
-- [molecule](https://molecule.readthedocs.io/)
+- [ansible-compat](https://ansible.readthedocs.io/projects/compat/)
+- [ansible-devtools](https://ansible.readthedocs.io/projects/dev-tools/)
+- [ansible-language-server](https://ansible.readthedocs.io/projects/language-server/)
+- [ansible-lint](https://ansible.readthedocs.io/projects/lint/)
+- [ansible-navigator](https://ansible.readthedocs.io/projects/navigator/)
+- [molecule](https://ansible.readthedocs.io/projects/molecule/)

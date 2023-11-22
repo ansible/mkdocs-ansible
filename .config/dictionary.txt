@@ -23,6 +23,8 @@ fontawesome
 htmlproofer
 inlinehilite
 linenums
+linkchecker
+linkcheckerrc
 magiclink
 minversion
 mkdocs
