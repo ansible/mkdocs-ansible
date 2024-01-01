@@ -17,7 +17,7 @@ repos:
       - id: check-useless-excludes
   - repo: https://github.com/pre-commit/mirrors-prettier
     # keep it before yamllint
-    rev: v4.0.0-alpha.3
+    rev: v4.0.0-alpha.8
     hooks:
       - id: prettier
         always_run: true
@@ -26,14 +26,14 @@ repos:
           - prettier-plugin-toml
           - prettier-plugin-sort-json
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v8.0.0
+    rev: v8.2.1
     hooks:
       - id: cspell
         # entry: codespell --relative
         args: [--relative, --no-progress, --no-summary]
         name: Spell check with cspell
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.27.2
+    rev: 0.27.3
     hooks:
       - id: check-github-workflows
   - repo: https://github.com/pre-commit/pre-commit-hooks.git
@@ -65,14 +65,14 @@ repos:
         types: [file, yaml]
         entry: yamllint --strict
   - repo: https://github.com/PyCQA/isort
-    rev: 5.12.0
+    rev: 5.13.2
     hooks:
       - id: isort
         args:
           # https://github.com/pre-commit/mirrors-isort/issues/9#issuecomment-624404082
           - --filter-files
   - repo: https://github.com/psf/black
-    rev: 23.11.0
+    rev: 23.12.1
     hooks:
       - id: black
         language_version: python3
@@ -95,14 +95,14 @@ repos:
       - id: pyupgrade
         args: ["--py39-plus"]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.7.1
+    rev: v1.8.0
     hooks:
       - id: mypy
         # empty args needed in order to match mypy cli behavior
         args: []
         additional_dependencies: []
   - repo: https://github.com/pycqa/pylint
-    rev: v3.0.1
+    rev: v3.0.3
     hooks:
       - id: pylint
         args:
