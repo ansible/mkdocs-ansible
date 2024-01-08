@@ -43,7 +43,7 @@ mkdocstrings-python==1.7.5
 packaging==23.2
 paginate==0.5.6
 pathspec==0.11.2
-pillow==10.1.0
+pillow==10.2.0
 pipdeptree==2.13.1
 platformdirs==4.0.0
 pycparser==2.21
