@@ -6,14 +6,14 @@ direction: ltr
 features: []
 palette:
   - scheme: default
-    primary: #5bbdbf
-    accent: #5bbdbf
+    primary: teal
+    accent: teal
     toggle:
       icon: material/brightness-7
       name: Switch to dark mode
   - scheme: slate
-    primary: #5bbdbf
-    accent: #5bbdbf
+    primary: teal
+    accent: teal
     toggle:
       icon: material/brightness-4
       name: Switch to light mode
