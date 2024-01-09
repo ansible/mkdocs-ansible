@@ -63,7 +63,7 @@ extra:
 
 extra_css:
   - stylesheets/ansible.css
-  
+
 # Extensions
 markdown_extensions:
   - abbr
