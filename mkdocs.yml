@@ -61,9 +61,6 @@ extra:
     - icon: fontawesome/brands/python
       link: https://pypi.org/project/mkdocs-ansible/
 
-extra_css:
-  - stylesheets/ansible.css
-
 # Extensions
 markdown_extensions:
   - abbr

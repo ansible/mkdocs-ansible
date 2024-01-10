@@ -33,3 +33,6 @@ icon:
 favicon: assets/images/favicon.ico
 static_templates:
   - 404.html
+
+extra_css:
+  - stylesheets/ansible.css
