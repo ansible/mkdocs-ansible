@@ -9,7 +9,10 @@ updates:
     labels:
       - dependabot
       - skip-changelog
-    versioning-strategy: lockfile-only
+    groups:
+      dependencies:
+        patterns:
+          - "*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
