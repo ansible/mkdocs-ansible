@@ -58,7 +58,6 @@ warn_unused_ignores = false # https://github.com/python/mypy/issues/13201
 ignore-paths = "^src/.*/(_version|_vendor).*$"
 
 [tool.setuptools.dynamic]
-optional-dependencies.lock = { file = [".config/requirements.txt"] }
 dependencies = { file = [".config/requirements.in"] }
 
 [tool.setuptools]
