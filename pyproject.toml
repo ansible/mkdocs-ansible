@@ -63,6 +63,9 @@ dependencies = { file = [".config/requirements.in"] }
 [tool.setuptools]
 include-package-data = true
 
+[tool.setuptools.package-data]
+"*" = ["*.css", "*.html", "*.js"]
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
