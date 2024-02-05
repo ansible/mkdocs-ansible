@@ -47,6 +47,8 @@ plugins:
   - material/social
   - material/search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - material/tags
+  - material/offline
   - minify:
       minify_html: true
 
