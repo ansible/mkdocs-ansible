@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # mkdocs-ansible theme
 
 This [mkdocs](https://www.mkdocs.org/) theme is based on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) and aims to provide a consistent
