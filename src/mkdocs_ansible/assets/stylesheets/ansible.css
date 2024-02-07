@@ -1,5 +1,7 @@
-:root {
+:root > * {
   --md-primary-fg-color: #5bbdbf;
+  --md-typeset-a-color: #2980b9; /* See https://github.com/squidfunk/mkdocs-material/issues/1583 */
+  /* --md-text-link-color: #2980b9; */
   /* --md-primary-fg-color--light: #ECB7B7; */
   /* --md-primary-fg-color--dark:  #FF5850; */
 }
