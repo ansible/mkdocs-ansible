@@ -18,29 +18,34 @@ theme:
   name: ansible
   # custom_dir: src/mkdocs_ansible/.overrides
   features:
-    # - announce.dismiss
+    - announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
     - content.code.copy
-    # - content.tabs.link
+    - content.tabs.link
     - content.tooltips
-    # - header.autohide
-    # - navigation.expand
+    - header.autohide
+    - navigation.expand
     - navigation.footer
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.prune
+    - navigation.instant
+    - navigation.path
+    - navigation.prune
     - navigation.sections
-    # - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
+    - toc.integrate
+
+nav:
+  - Home: README.md
+  - Contributor Guide: guide/contributor-guide.md # Added folder structure here only to test that assets reference works fine
 
 # Plugins
 plugins:
