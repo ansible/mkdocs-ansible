@@ -45,7 +45,6 @@ theme:
 
 nav:
   - Home: README.md
-  - Contributor Guide: guide/contributor-guide.md # Added folder structure here only to test that assets reference works fine
 
 # Plugins
 plugins:
