@@ -19,6 +19,7 @@ commitlint
 devel
 dists
 docstrings
+endraw
 fontawesome
 htmlproofer
 inlinehilite

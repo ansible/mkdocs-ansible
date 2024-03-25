@@ -45,9 +45,12 @@ theme:
 
 nav:
   - Home: README.md
+  - Macros: macros.md
 
 # Plugins
 plugins:
+  - macros:
+      modules: [mkdocs-ansible:mkdocs_ansible]
   - material/social
   - material/search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'

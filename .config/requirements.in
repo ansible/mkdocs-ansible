@@ -4,6 +4,7 @@ markdown-exec>=1.3.0
 markdown-include>=0.8.1
 mkdocs-gen-files>=0.4.0
 mkdocs-htmlproofer-plugin>=0.10.2
+mkdocs-macros-plugin
 mkdocs-material-extensions>=1.1.1
 mkdocs-material>=9.0.13
 mkdocs-minify-plugin>=0.6.2
