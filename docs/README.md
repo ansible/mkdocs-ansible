@@ -13,7 +13,6 @@ Some of the projects that use this theme are:
 
 - [ansible-compat](https://ansible.readthedocs.io/projects/compat/)
 - [ansible-dev-tools](https://ansible.readthedocs.io/projects/dev-tools/)
-- [ansible-language-server](https://ansible.readthedocs.io/projects/language-server/)
 - [ansible-lint](https://ansible.readthedocs.io/projects/lint/)
 - [ansible-navigator](https://ansible.readthedocs.io/projects/navigator/)
 - [molecule](https://ansible.readthedocs.io/projects/molecule/)

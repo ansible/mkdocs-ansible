@@ -46,6 +46,11 @@ python_version = "3.10"
 warn_unused_configs = true
 exclude = ['build']
 
+# https://github.com/fralau/mkdocs-macros-plugin/issues/219
+[[tool.mypy.overrides]]
+module = ["mkdocs_macros.plugin"]
+ignore_missing_imports = true
+
 [[tool.mypy.overrides]]
 module = ["mkdocs_ansible._version"]
 warn_unused_ignores = false

@@ -4,6 +4,9 @@ checkextern=1
 ignore=
   xml.gz$
   404.html
+  https://github.com/ansible/mkdocs-ansible/(blob|raw)/main/docs/.*\.md
+  https://ansible.readthedocs.io/projects/mkdocs-ansible/.*
+# https://github.com/linkchecker/linkchecker/discussions/811
 # https://github.com/squidfunk/mkdocs-material/pull/6386
 ignorewarnings=http-redirected
 

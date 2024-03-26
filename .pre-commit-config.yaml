@@ -26,14 +26,14 @@ repos:
           - prettier-plugin-toml
           - prettier-plugin-sort-json
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v8.3.0
+    rev: v8.6.0
     hooks:
       - id: cspell
         # entry: codespell --relative
         args: [--relative, --no-progress, --no-summary]
         name: Spell check with cspell
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.27.4
+    rev: 0.28.0
     hooks:
       - id: check-github-workflows
   - repo: https://github.com/pre-commit/pre-commit-hooks.git
@@ -58,7 +58,7 @@ repos:
         additional_dependencies:
           - tomli
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.33.0
+    rev: v1.35.1
     hooks:
       - id: yamllint
         files: \.(yaml|yml)$
@@ -72,44 +72,32 @@ repos:
           # https://github.com/pre-commit/mirrors-isort/issues/9#issuecomment-624404082
           - --filter-files
   - repo: https://github.com/psf/black
-    rev: 24.1.1
+    rev: 24.3.0
     hooks:
       - id: black
         language_version: python3
-  - repo: https://github.com/pycqa/flake8.git
-    rev: 7.0.0
-    hooks:
-      - id: flake8
-        language_version: python3
-        additional_dependencies:
-          - flake8-2020>=1.6.0
-          # - flake8-black>=0.1.1
-          - flake8-docstrings>=1.5.0
-          - flake8-print>=5.0
-          - flake8-pytest-style>=1.2.2
-          - flake8-future-annotations>=0.0.3
   - repo: https://github.com/asottile/pyupgrade
     # keep it after flake8
-    rev: v3.15.0
+    rev: v3.15.2
     hooks:
       - id: pyupgrade
         args: ["--py39-plus"]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.8.0
+    rev: v1.9.0
     hooks:
       - id: mypy
         # empty args needed in order to match mypy cli behavior
         args: []
-        additional_dependencies: []
+        additional_dependencies: ["mkdocs-macros-plugin"]
   - repo: https://github.com/pycqa/pylint
-    rev: v3.0.3
+    rev: v3.1.0
     hooks:
       - id: pylint
         args:
           - --output-format=colorized
-        additional_dependencies: []
+        additional_dependencies: ["mkdocs-macros-plugin"]
   - repo: https://github.com/jazzband/pip-tools
-    rev: 7.3.0
+    rev: 7.4.1
     hooks:
       - id: pip-compile
         name: lock
