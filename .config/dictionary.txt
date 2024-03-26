@@ -6,6 +6,7 @@ Roboto
 TOXENV
 ansiblelint
 arithmatex
+autobuild
 autofix
 autohide
 autoupdate
