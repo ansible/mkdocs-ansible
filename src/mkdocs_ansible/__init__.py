@@ -21,9 +21,9 @@ def install_from_adt(name: str) -> str:
 
     The **recommended** approach to install `{name}` is using the
     `ansible-dev-tools` package.
-    [Ansible Development Tools (ADT)](https://ansible.readthedocs.io/projects/dev-tools/)
+    [Ansible Development Tools](https://ansible.readthedocs.io/projects/dev-tools/)
     aims to streamline the setup and usage of several tools needed in order to
-    create [Ansible](https://www.ansible.com) content. ADT combines critical Ansible
+    create [Ansible](https://www.ansible.com) content. It combines critical Ansible
     development packages into a unified Python package.
 
     ```bash
