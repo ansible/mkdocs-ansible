@@ -103,7 +103,7 @@ repos:
         name: lock
         alias: lock
         always_run: true
-        entry: pip-compile --upgrade --resolver=backtracking -q --no-annotate --output-file=.config/constraints.txt pyproject.toml --strip-extras --unsafe-package ruamel-yaml-clib
+        entry: pip-compile --upgrade -q --no-annotate --output-file=.config/constraints.txt pyproject.toml --all-extras --strip-extras --unsafe-package ruamel-yaml-clib
         files: ^.config\/requirements.*$
         language: python
         language_version: "3.10" # minimal we support officially
@@ -115,7 +115,7 @@ repos:
         name: deps
         alias: deps
         always_run: true
-        entry: pip-compile --resolver=backtracking -q --no-annotate --output-file=.config/constraints.txt pyproject.toml --strip-extras --unsafe-package ruamel-yaml-clib
+        entry: pip-compile -q --no-annotate --output-file=.config/constraints.txt pyproject.toml  --all-extras --strip-extras --unsafe-package ruamel-yaml-clib
         files: ^.config\/requirements.*$
         language: python
         language_version: "3.10" # minimal we support officially

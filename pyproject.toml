@@ -37,8 +37,23 @@ documentation = "https://ansible.readthedocs.io/projects/mkdocs-ansible/"
 repository = "https://github.com/ansible/mkdocs-ansible"
 changelog = "https://github.com/ansible/mkdocs-ansible/releases"
 
+
 [project.entry-points."mkdocs.themes"]
 ansible = "mkdocs_ansible"
+
+[tool.coverage.report]
+exclude_lines = ["pragma: no cover", "if TYPE_CHECKING:"]
+omit = ["test/*", "src/mkdocs_ansible/_version.py"]
+# Increase it just so it would pass on any single-python run
+fail_under = 82
+skip_covered = true
+skip_empty = true
+# During development we might remove code (files) with coverage data, and we dont want to fail:
+ignore_errors = true
+show_missing = true
+
+[tool.coverage.run]
+source = ["src"]
 
 [tool.mypy]
 strict = true
@@ -64,6 +79,7 @@ ignore-paths = "^src/.*/(_version|_vendor).*$"
 
 [tool.setuptools.dynamic]
 dependencies = { file = [".config/requirements.in"] }
+optional-dependencies.test = { file = [".config/requirements-test.in"] }
 
 [tool.setuptools]
 include-package-data = true
