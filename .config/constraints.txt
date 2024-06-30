@@ -28,7 +28,7 @@ jinja2==3.1.4
 jsmin==3.0.1
 linkchecker==10.4.0
 markdown==3.6
-markdown-exec==1.9.2
+markdown-exec==1.9.3
 markdown-include==0.8.1
 markupsafe==2.1.5
 mergedeep==1.3.4
@@ -48,7 +48,7 @@ packaging==24.1
 paginate==0.5.6
 pathspec==0.12.1
 pillow==10.3.0
-pip==24.1
+pip==24.1.1
 pipdeptree==2.23.0
 platformdirs==4.2.2
 pluggy==1.5.0
