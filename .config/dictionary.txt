@@ -48,6 +48,7 @@ setuptools
 smartsymbols
 sourcegraph
 squidfunk
+strenum
 superfences
 tasklist
 tomli
