@@ -37,4 +37,4 @@ def install_from_adt(name: str) -> str:
 def define_env(env: MacrosPlugin) -> None:
     """Declare environment for jinja2 templates for markdown."""
     for fn in [install_from_adt]:
-        env.macro(fn)
+        env.macro(fn)  # type: ignore[no-untyped-call]
