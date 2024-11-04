@@ -26,14 +26,14 @@ repos:
           - prettier-plugin-toml
           - prettier-plugin-sort-json
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v8.13.3
+    rev: v8.15.2
     hooks:
       - id: cspell
         # entry: codespell --relative
         args: [--relative, --no-progress, --no-summary]
         name: Spell check with cspell
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.29.3
+    rev: 0.29.4
     hooks:
       - id: check-github-workflows
   - repo: https://github.com/pre-commit/pre-commit-hooks.git
@@ -72,18 +72,18 @@ repos:
           # https://github.com/pre-commit/mirrors-isort/issues/9#issuecomment-624404082
           - --filter-files
   - repo: https://github.com/psf/black
-    rev: 24.8.0
+    rev: 24.10.0
     hooks:
       - id: black
         language_version: python3
   - repo: https://github.com/asottile/pyupgrade
     # keep it after flake8
-    rev: v3.17.0
+    rev: v3.19.0
     hooks:
       - id: pyupgrade
         args: ["--py39-plus"]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.11.2
+    rev: v1.13.0
     hooks:
       - id: mypy
         # empty args needed in order to match mypy cli behavior
