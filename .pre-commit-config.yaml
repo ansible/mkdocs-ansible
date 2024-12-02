@@ -26,14 +26,14 @@ repos:
           - prettier-plugin-toml
           - prettier-plugin-sort-json
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v8.15.2
+    rev: v8.16.0
     hooks:
       - id: cspell
         # entry: codespell --relative
         args: [--relative, --no-progress, --no-summary]
         name: Spell check with cspell
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.29.4
+    rev: 0.30.0
     hooks:
       - id: check-github-workflows
   - repo: https://github.com/pre-commit/pre-commit-hooks.git
@@ -90,7 +90,7 @@ repos:
         args: []
         additional_dependencies: ["mkdocs-macros-plugin"]
   - repo: https://github.com/pycqa/pylint
-    rev: v3.3.1
+    rev: v3.3.2
     hooks:
       - id: pylint
         args:
