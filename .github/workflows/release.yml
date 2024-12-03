@@ -10,6 +10,8 @@ jobs:
   pypi:
     name: Publish to PyPI registry
     environment: release
+    permissions:
+      id-token: write
     runs-on: ubuntu-22.04
 
     env:
