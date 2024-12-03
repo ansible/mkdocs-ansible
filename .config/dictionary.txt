@@ -35,7 +35,6 @@ mkdocstrings
 mypy
 notest
 outdir
-pipdeptree
 pycontribs
 pylint
 pymdown
