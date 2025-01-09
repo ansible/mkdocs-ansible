@@ -26,7 +26,7 @@ repos:
           - prettier-plugin-toml
           - prettier-plugin-sort-json
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v8.16.0
+    rev: v8.17.0
     hooks:
       - id: cspell
         # entry: codespell --relative
@@ -78,19 +78,19 @@ repos:
         language_version: python3
   - repo: https://github.com/asottile/pyupgrade
     # keep it after flake8
-    rev: v3.19.0
+    rev: v3.19.1
     hooks:
       - id: pyupgrade
         args: ["--py39-plus"]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.13.0
+    rev: v1.14.1
     hooks:
       - id: mypy
         # empty args needed in order to match mypy cli behavior
         args: []
         additional_dependencies: ["mkdocs-macros-plugin"]
   - repo: https://github.com/pycqa/pylint
-    rev: v3.3.2
+    rev: v3.3.3
     hooks:
       - id: pylint
         args:
