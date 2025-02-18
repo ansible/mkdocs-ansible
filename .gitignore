@@ -8,3 +8,4 @@ site
 src/mkdocs_ansible/_version.py
 .cache
 _readthedocs
+*.lcov

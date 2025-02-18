@@ -4,6 +4,7 @@ PYTHONPYCACHEPREFIX
 REQPASS
 Roboto
 TOXENV
+addopts
 ansiblelint
 arithmatex
 autobuild
@@ -35,6 +36,7 @@ mkdocstrings
 mypy
 notest
 outdir
+posargs
 pycontribs
 pylint
 pymdown
@@ -44,9 +46,12 @@ pyproject
 pyupgrade
 ruamel
 setuptools
+showlocals
 smartsymbols
 sourcegraph
 squidfunk
 superfences
 tasklist
+testpaths
 tomli
+tomlsort

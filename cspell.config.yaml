@@ -9,10 +9,11 @@ dictionaries:
   - bash
   - words
   - python
+enabled: true
 ignorePaths:
   - cspell.config.yaml
   # The requirements file
-  - .config/constraints.txt
+  - .config/*.txt
   # Test fixtures generated from outside
   - test/**/*.result
   - src/ansiblelint/schemas/*.json
