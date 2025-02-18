@@ -3,8 +3,7 @@ rules:
   comments:
     # prettier compatibility
     min-spaces-from-content: 1
-  document-start:
-    present: true
+  document-start: disable
   indentation:
     level: error
     indent-sequences: consistent
