@@ -14,7 +14,7 @@ repos:
       - id: check-useless-excludes
   - repo: https://github.com/rbubley/mirrors-prettier
     # keep it before yamllint
-    rev: v3.5.1
+    rev: v3.5.3
     hooks:
       - id: prettier
         always_run: true
@@ -22,14 +22,14 @@ repos:
           - prettier@3.2.4
           - prettier-plugin-sort-json@3.1.0
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v8.17.2
+    rev: v8.17.3
     hooks:
       - id: cspell
         # entry: codespell --relative
         args: [--relative, --no-progress, --no-summary]
         name: Spell check with cspell
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.31.1
+    rev: 0.31.2
     hooks:
       - id: check-github-workflows
   - repo: https://github.com/pre-commit/pre-commit-hooks.git
@@ -83,7 +83,7 @@ repos:
       - id: tox-ini-fmt
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.9.6
+    rev: v0.9.9
     hooks:
       - id: ruff
         args:
