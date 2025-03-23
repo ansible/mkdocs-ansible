@@ -14,7 +14,7 @@ cssselect2==0.8.0         # via cairosvg
 defusedxml==0.7.1         # via cairosvg
 dnspython==2.7.0          # via linkchecker
 ghp-import==2.1.0         # via mkdocs
-griffe==1.6.0             # via mkdocstrings-python
+griffe==1.6.2             # via mkdocstrings-python
 hjson==3.1.0              # via mkdocs-macros-plugin, super-collections
 htmlmin2==0.1.13          # via mkdocs-minify-plugin
 idna==3.10                # via requests
@@ -22,7 +22,7 @@ jinja2==3.1.6             # via mkdocs, mkdocs-macros-plugin, mkdocs-material, m
 jsmin==3.0.1              # via mkdocs-minify-plugin
 linkchecker==10.5.0       # via mkdocs-ansible (pyproject.toml)
 markdown==3.7             # via markdown-include, mkdocs, mkdocs-autorefs, mkdocs-htmlproofer-plugin, mkdocs-material, mkdocstrings, pymdown-extensions
-markdown-exec==1.10.1     # via mkdocs-ansible (pyproject.toml)
+markdown-exec==1.10.2     # via mkdocs-ansible (pyproject.toml)
 markdown-include==0.8.1   # via mkdocs-ansible (pyproject.toml)
 markupsafe==3.0.2         # via jinja2, mkdocs, mkdocs-autorefs, mkdocstrings
 mergedeep==1.3.4          # via mkdocs, mkdocs-get-deps
@@ -32,17 +32,17 @@ mkdocs-gen-files==0.5.0   # via mkdocs-ansible (pyproject.toml)
 mkdocs-get-deps==0.2.0    # via mkdocs, mkdocstrings
 mkdocs-htmlproofer-plugin==1.3.0  # via mkdocs-ansible (pyproject.toml)
 mkdocs-macros-plugin==1.3.7  # via mkdocs-ansible (pyproject.toml)
-mkdocs-material==9.6.8    # via mkdocs-ansible (pyproject.toml)
+mkdocs-material==9.6.9    # via mkdocs-ansible (pyproject.toml)
 mkdocs-material-extensions==1.3.1  # via mkdocs-material, mkdocs-ansible (pyproject.toml)
 mkdocs-minify-plugin==0.8.0  # via mkdocs-ansible (pyproject.toml)
 mkdocs-monorepo-plugin==1.1.0  # via mkdocs-ansible (pyproject.toml)
 mkdocstrings==0.29.0      # via mkdocstrings-python, mkdocs-ansible (pyproject.toml)
-mkdocstrings-python==1.16.5  # via mkdocs-ansible (pyproject.toml)
+mkdocstrings-python==1.16.7  # via mkdocs-ansible (pyproject.toml)
 packaging==24.2           # via mkdocs, mkdocs-macros-plugin
 paginate==0.5.7           # via mkdocs-material
 pathspec==0.12.1          # via mkdocs, mkdocs-macros-plugin
 pillow==11.1.0            # via cairosvg, mkdocs-ansible (pyproject.toml)
-platformdirs==4.3.6       # via mkdocs-get-deps
+platformdirs==4.3.7       # via mkdocs-get-deps
 pycparser==2.22           # via cffi
 pygments==2.19.1          # via mkdocs-material
 pymdown-extensions==10.14.3  # via markdown-exec, mkdocs-material, mkdocstrings, mkdocs-ansible (pyproject.toml)
