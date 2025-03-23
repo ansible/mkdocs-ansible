@@ -10,7 +10,7 @@ cffi==1.17.1              # via cairocffi
 charset-normalizer==3.4.1  # via requests
 click==8.1.8              # via mkdocs
 colorama==0.4.6           # via griffe, mkdocs-material
-coverage==7.7.1          # via mkdocs-ansible (pyproject.toml)
+coverage==7.7.1           # via mkdocs-ansible (pyproject.toml)
 csscompressor==0.9.5      # via mkdocs-minify-plugin
 cssselect2==0.8.0         # via cairosvg
 defusedxml==0.7.1         # via cairosvg
