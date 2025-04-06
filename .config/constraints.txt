@@ -10,7 +10,7 @@ cffi==1.17.1              # via cairocffi
 charset-normalizer==3.4.1  # via requests
 click==8.1.8              # via mkdocs
 colorama==0.4.6           # via griffe, mkdocs-material
-coverage==7.7.1           # via mkdocs-ansible (pyproject.toml)
+coverage==7.8.0           # via mkdocs-ansible (pyproject.toml)
 csscompressor==0.9.5      # via mkdocs-minify-plugin
 cssselect2==0.8.0         # via cairosvg
 defusedxml==0.7.1         # via cairosvg
@@ -18,7 +18,7 @@ dnspython==2.7.0          # via linkchecker
 exceptiongroup==1.2.2     # via pytest
 execnet==2.1.1            # via pytest-xdist
 ghp-import==2.1.0         # via mkdocs
-griffe==1.7.1             # via mkdocstrings-python
+griffe==1.7.2             # via mkdocstrings-python
 hjson==3.1.0              # via mkdocs-macros-plugin, super-collections
 htmlmin2==0.1.13          # via mkdocs-minify-plugin
 idna==3.10                # via requests
@@ -37,12 +37,12 @@ mkdocs-gen-files==0.5.0   # via mkdocs-ansible (pyproject.toml)
 mkdocs-get-deps==0.2.0    # via mkdocs
 mkdocs-htmlproofer-plugin==1.3.0  # via mkdocs-ansible (pyproject.toml)
 mkdocs-macros-plugin==1.3.7  # via mkdocs-ansible (pyproject.toml)
-mkdocs-material==9.6.10   # via mkdocs-ansible (pyproject.toml)
+mkdocs-material==9.6.11   # via mkdocs-ansible (pyproject.toml)
 mkdocs-material-extensions==1.3.1  # via mkdocs-material, mkdocs-ansible (pyproject.toml)
 mkdocs-minify-plugin==0.8.0  # via mkdocs-ansible (pyproject.toml)
 mkdocs-monorepo-plugin==1.1.0  # via mkdocs-ansible (pyproject.toml)
-mkdocstrings==0.29.0      # via mkdocstrings-python, mkdocs-ansible (pyproject.toml)
-mkdocstrings-python==1.16.8  # via mkdocs-ansible (pyproject.toml)
+mkdocstrings==0.29.1      # via mkdocstrings-python, mkdocs-ansible (pyproject.toml)
+mkdocstrings-python==1.16.10  # via mkdocs-ansible (pyproject.toml)
 packaging==24.2           # via mkdocs, mkdocs-macros-plugin, pytest
 paginate==0.5.7           # via mkdocs-material
 pathspec==0.12.1          # via mkdocs, mkdocs-macros-plugin
@@ -63,11 +63,11 @@ requests==2.32.3          # via linkchecker, mkdocs-htmlproofer-plugin, mkdocs-m
 six==1.17.0               # via python-dateutil
 soupsieve==2.6            # via beautifulsoup4
 super-collections==0.5.3  # via mkdocs-macros-plugin
-termcolor==2.5.0          # via mkdocs-macros-plugin
+termcolor==3.0.1          # via mkdocs-macros-plugin
 text-unidecode==1.3       # via python-slugify
 tinycss2==1.4.0           # via cairosvg, cssselect2
 tomli==2.2.1              # via pytest
-typing-extensions==4.12.2  # via beautifulsoup4, mkdocstrings-python
+typing-extensions==4.13.1  # via beautifulsoup4, mkdocstrings-python
 urllib3==2.3.0            # via requests
 watchdog==6.0.0           # via mkdocs
 webencodings==0.5.1       # via cssselect2, tinycss2
