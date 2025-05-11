@@ -65,10 +65,22 @@ extra:
   #   provider: google
   #   property: !ENV GOOGLE_ANALYTICS_KEY
   social:
-    - icon: fontawesome/brands/github
+    - icon: fontawesome/brands/github-alt
       link: https://github.com/ansible/mkdocs-ansible
     - icon: fontawesome/brands/python
       link: https://pypi.org/project/mkdocs-ansible/
+    - icon: fontawesome/solid/scroll
+      link: https://github.com/ansible/mkdocs-ansible/releases
+      name: Releases
+    - icon: simple/mastodon
+      link: https://fosstodon.org/@ansible
+      name: Mastodon
+    - icon: simple/matrix
+      link: https://matrix.to/#/#devtools:ansible.com
+      name: Matrix
+    - icon: fontawesome/brands/discourse
+      link: https://forum.ansible.com/tag/devtools
+      name: Ansible forum
 
 # Extensions
 markdown_extensions:
