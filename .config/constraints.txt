@@ -31,7 +31,7 @@ markdown-exec==1.10.3     # via mkdocs-ansible (pyproject.toml)
 markdown-include==0.8.1   # via mkdocs-ansible (pyproject.toml)
 markupsafe==3.0.2         # via jinja2, mkdocs, mkdocs-autorefs, mkdocstrings
 mergedeep==1.3.4          # via mkdocs, mkdocs-get-deps
-mkdocs==1.6.1             # via mkdocs-autorefs, mkdocs-gen-files, mkdocs-htmlproofer-plugin, mkdocs-macros-plugin, mkdocs-material, mkdocs-minify-plugin, mkdocs-monorepo-plugin, mkdocstrings, mkdocs-ansible (pyproject.toml)
+mkdocs==1.6.1             # via mkdocs-autorefs, mkdocs-gen-files, mkdocs-htmlproofer-plugin, mkdocs-macros-plugin, mkdocs-material, mkdocs-minify-plugin, mkdocstrings, mkdocs-ansible (pyproject.toml)
 mkdocs-autorefs==1.4.1    # via mkdocstrings, mkdocstrings-python
 mkdocs-gen-files==0.5.0   # via mkdocs-ansible (pyproject.toml)
 mkdocs-get-deps==0.2.0    # via mkdocs
@@ -40,7 +40,6 @@ mkdocs-macros-plugin==1.3.7  # via mkdocs-ansible (pyproject.toml)
 mkdocs-material==9.6.13   # via mkdocs-ansible (pyproject.toml)
 mkdocs-material-extensions==1.3.1  # via mkdocs-material, mkdocs-ansible (pyproject.toml)
 mkdocs-minify-plugin==0.8.0  # via mkdocs-ansible (pyproject.toml)
-mkdocs-monorepo-plugin==1.1.0  # via mkdocs-ansible (pyproject.toml)
 mkdocstrings==0.29.1      # via mkdocstrings-python, mkdocs-ansible (pyproject.toml)
 mkdocstrings-python==1.16.10  # via mkdocs-ansible (pyproject.toml)
 packaging==25.0           # via mkdocs, mkdocs-macros-plugin, pytest
@@ -56,7 +55,6 @@ pytest==8.3.5             # via pytest-plus, pytest-xdist, mkdocs-ansible (pypro
 pytest-plus==0.8.1        # via mkdocs-ansible (pyproject.toml)
 pytest-xdist==3.6.1       # via mkdocs-ansible (pyproject.toml)
 python-dateutil==2.9.0.post0  # via ghp-import, mkdocs-macros-plugin
-python-slugify==8.0.4     # via mkdocs-monorepo-plugin
 pyyaml==6.0.2             # via mkdocs, mkdocs-get-deps, mkdocs-macros-plugin, pymdown-extensions, pyyaml-env-tag
 pyyaml-env-tag==1.0       # via mkdocs
 requests==2.32.3          # via linkchecker, mkdocs-htmlproofer-plugin, mkdocs-material
@@ -64,7 +62,6 @@ six==1.17.0               # via python-dateutil
 soupsieve==2.7            # via beautifulsoup4
 super-collections==0.5.3  # via mkdocs-macros-plugin
 termcolor==3.1.0          # via mkdocs-macros-plugin
-text-unidecode==1.3       # via python-slugify
 tinycss2==1.4.0           # via cairosvg, cssselect2
 tomli==2.2.1              # via pytest
 typing-extensions==4.13.2  # via beautifulsoup4, exceptiongroup, mkdocstrings-python
