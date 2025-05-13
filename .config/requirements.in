@@ -1,4 +1,4 @@
-cairosvg>=2.7.1
+cairosvg>=2.7.1,<2.8.0 # temporary due to https://github.com/squidfunk/mkdocs-material/issues/8215
 linkchecker>=10.5.0
 markdown-exec>=1.10.0
 markdown-include>=0.8.1
