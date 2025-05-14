@@ -4,7 +4,7 @@ babel==2.17.0             # via mkdocs-material
 backrefs==5.8             # via mkdocs-material
 beautifulsoup4==4.13.4    # via linkchecker, mkdocs-htmlproofer-plugin
 cairocffi==1.7.1          # via cairosvg
-cairosvg==2.7.1           # via mkdocs-ansible (pyproject.toml)
+cairosvg==2.8.1           # via mkdocs-ansible (pyproject.toml)
 certifi==2025.4.26        # via requests
 cffi==1.17.1              # via cairocffi
 charset-normalizer==3.4.2  # via requests
@@ -33,7 +33,7 @@ mkdocs-gen-files==0.5.0   # via mkdocs-ansible (pyproject.toml)
 mkdocs-get-deps==0.2.0    # via mkdocs
 mkdocs-htmlproofer-plugin==1.3.0  # via mkdocs-ansible (pyproject.toml)
 mkdocs-macros-plugin==1.3.7  # via mkdocs-ansible (pyproject.toml)
-mkdocs-material==9.6.13   # via mkdocs-ansible (pyproject.toml)
+mkdocs-material==9.6.14   # via mkdocs-ansible (pyproject.toml)
 mkdocs-material-extensions==1.3.1  # via mkdocs-material, mkdocs-ansible (pyproject.toml)
 mkdocs-minify-plugin==0.8.0  # via mkdocs-ansible (pyproject.toml)
 mkdocstrings==0.29.1      # via mkdocstrings-python, mkdocs-ansible (pyproject.toml)
@@ -48,14 +48,14 @@ pygments==2.19.1          # via mkdocs-material
 pymdown-extensions==10.15  # via markdown-exec, mkdocs-material, mkdocstrings, mkdocs-ansible (pyproject.toml)
 python-dateutil==2.9.0.post0  # via ghp-import, mkdocs-macros-plugin
 pyyaml==6.0.2             # via mkdocs, mkdocs-get-deps, mkdocs-macros-plugin, pymdown-extensions, pyyaml-env-tag
-pyyaml-env-tag==1.0       # via mkdocs
+pyyaml-env-tag==1.1       # via mkdocs
 requests==2.32.3          # via linkchecker, mkdocs-htmlproofer-plugin, mkdocs-material
 six==1.17.0               # via python-dateutil
 soupsieve==2.7            # via beautifulsoup4
 super-collections==0.5.3  # via mkdocs-macros-plugin
 termcolor==3.1.0          # via mkdocs-macros-plugin
 tinycss2==1.4.0           # via cairosvg, cssselect2
-typing-extensions==4.13.2  # via beautifulsoup4, mkdocstrings-python
+typing-extensions==4.13.2  # via beautifulsoup4
 urllib3==2.4.0            # via requests
 watchdog==6.0.0           # via mkdocs
 webencodings==0.5.1       # via cssselect2, tinycss2
