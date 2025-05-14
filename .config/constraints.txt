@@ -15,7 +15,6 @@ csscompressor==0.9.5      # via mkdocs-minify-plugin
 cssselect2==0.8.0         # via cairosvg
 defusedxml==0.7.1         # via cairosvg
 dnspython==2.7.0          # via linkchecker
-exceptiongroup==1.3.0     # via pytest
 execnet==2.1.1            # via pytest-xdist
 ghp-import==2.1.0         # via mkdocs
 griffe==1.7.3             # via mkdocstrings-python
@@ -63,8 +62,7 @@ soupsieve==2.7            # via beautifulsoup4
 super-collections==0.5.3  # via mkdocs-macros-plugin
 termcolor==3.1.0          # via mkdocs-macros-plugin
 tinycss2==1.4.0           # via cairosvg, cssselect2
-tomli==2.2.1              # via pytest
-typing-extensions==4.13.2  # via beautifulsoup4, exceptiongroup, mkdocstrings-python
+typing-extensions==4.13.2  # via beautifulsoup4
 urllib3==2.4.0            # via requests
 watchdog==6.0.0           # via mkdocs
 webencodings==0.5.1       # via cssselect2, tinycss2

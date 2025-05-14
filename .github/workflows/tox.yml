@@ -23,7 +23,8 @@ jobs:
   tox:
     uses: ansible/team-devtools/.github/workflows/tox.yml@main
     with:
-      jobs_producing_coverage: 6
+      jobs_producing_coverage: 5
+      min_python: "3.11"
       other_names: |
         docs
         lint
