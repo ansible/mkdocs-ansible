@@ -113,20 +113,18 @@ repos:
         name: Check constraints files and requirements
         files: ^(pyproject\.toml|\.config/.*)$
         language: python
-        language_version: "3.10" # minimal we support officially
-        entry: python3 -m uv pip compile -q --all-extras --output-file=.config/constraints.txt pyproject.toml
+        entry: uv pip compile -q --all-extras --python-version=3.11 --output-file=.config/constraints.txt pyproject.toml
         pass_filenames: false
         additional_dependencies:
-          - uv>=0.5.21
+          - uv>=0.6.6
       - id: lock
         name: Update requirements-lock.txt
         alias: lock
         always_run: true
-        entry: python3 -m uv pip compile -q --upgrade --output-file=.config/requirements-lock.txt pyproject.toml --strip-extras
+        entry: python3 -m uv pip compile -q --python-version=3.11 --upgrade --output-file=.config/requirements-lock.txt pyproject.toml --strip-extras
         files: ^(pyproject\.toml|\.config/.*)$
         language: python
-        language_version: "3.10" # minimal we support officially
         pass_filenames: false
         stages: [manual]
         additional_dependencies:
-          - uv>=0.5.21
+          - uv>=0.6.6
