@@ -28,7 +28,7 @@ markdown-include==0.8.1   # via mkdocs-ansible (pyproject.toml)
 markupsafe==3.0.2         # via jinja2, mkdocs, mkdocs-autorefs, mkdocstrings
 mergedeep==1.3.4          # via mkdocs, mkdocs-get-deps
 mkdocs==1.6.1             # via mkdocs-autorefs, mkdocs-gen-files, mkdocs-htmlproofer-plugin, mkdocs-macros-plugin, mkdocs-material, mkdocs-minify-plugin, mkdocstrings, mkdocs-ansible (pyproject.toml)
-mkdocs-autorefs==1.4.1    # via mkdocstrings, mkdocstrings-python
+mkdocs-autorefs==1.4.2    # via mkdocstrings, mkdocstrings-python
 mkdocs-gen-files==0.5.0   # via mkdocs-ansible (pyproject.toml)
 mkdocs-get-deps==0.2.0    # via mkdocs
 mkdocs-htmlproofer-plugin==1.3.0  # via mkdocs-ansible (pyproject.toml)
@@ -37,7 +37,7 @@ mkdocs-material==9.6.14   # via mkdocs-ansible (pyproject.toml)
 mkdocs-material-extensions==1.3.1  # via mkdocs-material, mkdocs-ansible (pyproject.toml)
 mkdocs-minify-plugin==0.8.0  # via mkdocs-ansible (pyproject.toml)
 mkdocstrings==0.29.1      # via mkdocstrings-python, mkdocs-ansible (pyproject.toml)
-mkdocstrings-python==1.16.10  # via mkdocs-ansible (pyproject.toml)
+mkdocstrings-python==1.16.11  # via mkdocs-ansible (pyproject.toml)
 packaging==25.0           # via mkdocs, mkdocs-macros-plugin
 paginate==0.5.7           # via mkdocs-material
 pathspec==0.12.1          # via mkdocs, mkdocs-macros-plugin
