@@ -48,7 +48,7 @@ pillow==11.2.1            # via cairosvg, mkdocs-ansible (pyproject.toml)
 platformdirs==4.3.8       # via mkdocs-get-deps
 pluggy==1.6.0             # via pytest
 pycparser==2.22           # via cffi
-pygments==2.19.1          # via mkdocs-material
+pygments==2.19.1          # via mkdocs-material, pytest
 pymdown-extensions==10.15  # via markdown-exec, mkdocs-material, mkdocstrings, mkdocs-ansible (pyproject.toml)
 pytest==8.4.0             # via pytest-plus, pytest-xdist, mkdocs-ansible (pyproject.toml)
 pytest-plus==0.8.1        # via mkdocs-ansible (pyproject.toml)
