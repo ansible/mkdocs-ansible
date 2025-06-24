@@ -25,7 +25,7 @@ iniconfig==2.1.0          # via pytest
 jinja2==3.1.6             # via mkdocs, mkdocs-macros-plugin, mkdocs-material, mkdocstrings
 jsmin==3.0.1              # via mkdocs-minify-plugin
 linkchecker==10.5.0       # via mkdocs-ansible (pyproject.toml)
-markdown==3.8             # via markdown-include, mkdocs, mkdocs-autorefs, mkdocs-htmlproofer-plugin, mkdocs-material, mkdocstrings, pymdown-extensions
+markdown==3.8.2           # via markdown-include, mkdocs, mkdocs-autorefs, mkdocs-htmlproofer-plugin, mkdocs-material, mkdocstrings, pymdown-extensions
 markdown-exec==1.10.3     # via mkdocs-ansible (pyproject.toml)
 markdown-include==0.8.1   # via mkdocs-ansible (pyproject.toml)
 markupsafe==3.0.2         # via jinja2, mkdocs, mkdocs-autorefs, mkdocstrings
@@ -48,9 +48,9 @@ pillow==11.2.1            # via cairosvg, mkdocs-ansible (pyproject.toml)
 platformdirs==4.3.8       # via mkdocs-get-deps
 pluggy==1.6.0             # via pytest
 pycparser==2.22           # via cffi
-pygments==2.19.1          # via mkdocs-material, pytest
-pymdown-extensions==10.15  # via markdown-exec, mkdocs-material, mkdocstrings, mkdocs-ansible (pyproject.toml)
-pytest==8.4.0             # via pytest-plus, pytest-xdist, mkdocs-ansible (pyproject.toml)
+pygments==2.19.2          # via mkdocs-material, pytest
+pymdown-extensions==10.16  # via markdown-exec, mkdocs-material, mkdocstrings, mkdocs-ansible (pyproject.toml)
+pytest==8.4.1             # via pytest-plus, pytest-xdist, mkdocs-ansible (pyproject.toml)
 pytest-plus==0.8.1        # via mkdocs-ansible (pyproject.toml)
 pytest-xdist==3.7.0       # via mkdocs-ansible (pyproject.toml)
 python-dateutil==2.9.0.post0  # via ghp-import, mkdocs-macros-plugin
@@ -63,6 +63,6 @@ super-collections==0.5.3  # via mkdocs-macros-plugin
 termcolor==3.1.0          # via mkdocs-macros-plugin
 tinycss2==1.4.0           # via cairosvg, cssselect2
 typing-extensions==4.14.0  # via beautifulsoup4
-urllib3==2.4.0            # via requests
+urllib3==2.5.0            # via requests
 watchdog==6.0.0           # via mkdocs
 webencodings==0.5.1       # via cssselect2, tinycss2
