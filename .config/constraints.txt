@@ -25,7 +25,7 @@ iniconfig==2.1.0          # via pytest
 jinja2==3.1.6             # via mkdocs, mkdocs-macros-plugin, mkdocs-material, mkdocstrings
 jsmin==3.0.1              # via mkdocs-minify-plugin
 linkchecker==10.5.0       # via mkdocs-ansible (pyproject.toml)
-markdown==3.8.2             # via markdown-include, mkdocs, mkdocs-autorefs, mkdocs-htmlproofer-plugin, mkdocs-material, mkdocstrings, pymdown-extensions
+markdown==3.8.2           # via markdown-include, mkdocs, mkdocs-autorefs, mkdocs-htmlproofer-plugin, mkdocs-material, mkdocstrings, pymdown-extensions
 markdown-exec==1.10.3     # via mkdocs-ansible (pyproject.toml)
 markdown-include==0.8.1   # via mkdocs-ansible (pyproject.toml)
 markupsafe==3.0.2         # via jinja2, mkdocs, mkdocs-autorefs, mkdocstrings
