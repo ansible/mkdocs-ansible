@@ -41,7 +41,7 @@ mkdocstrings-python==1.16.12  # via mkdocs-ansible (pyproject.toml)
 packaging==25.0           # via mkdocs, mkdocs-macros-plugin
 paginate==0.5.7           # via mkdocs-material
 pathspec==0.12.1          # via mkdocs, mkdocs-macros-plugin
-pillow==11.2.1            # via cairosvg, mkdocs-ansible (pyproject.toml)
+pillow==11.3.0            # via cairosvg, mkdocs-ansible (pyproject.toml)
 platformdirs==4.3.8       # via mkdocs-get-deps
 pycparser==2.22           # via cffi
 pygments==2.19.2          # via mkdocs-material
