@@ -5,7 +5,7 @@ backrefs==5.9             # via mkdocs-material
 beautifulsoup4==4.13.4    # via linkchecker, mkdocs-htmlproofer-plugin
 cairocffi==1.7.1          # via cairosvg
 cairosvg==2.8.2           # via mkdocs-ansible (pyproject.toml)
-certifi==2025.6.15        # via requests
+certifi==2025.7.9         # via requests
 cffi==1.17.1              # via cairocffi
 charset-normalizer==3.4.2  # via requests
 click==8.2.0              # via mkdocs
