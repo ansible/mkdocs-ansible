@@ -5,12 +5,12 @@ backrefs==5.9             # via mkdocs-material
 beautifulsoup4==4.13.4    # via linkchecker, mkdocs-htmlproofer-plugin
 cairocffi==1.7.1          # via cairosvg
 cairosvg==2.8.2           # via mkdocs-ansible (pyproject.toml)
-certifi==2025.7.14         # via requests
+certifi==2025.7.14        # via requests
 cffi==1.17.1              # via cairocffi
 charset-normalizer==3.4.2  # via requests
 click==8.1.8              # via mkdocs
 colorama==0.4.6           # via griffe, mkdocs-material
-coverage==7.10.1           # via mkdocs-ansible (pyproject.toml)
+coverage==7.10.1          # via mkdocs-ansible (pyproject.toml)
 csscompressor==0.9.5      # via mkdocs-minify-plugin
 cssselect2==0.8.0         # via cairosvg
 defusedxml==0.7.1         # via cairosvg
