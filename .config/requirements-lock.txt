@@ -6,7 +6,7 @@ beautifulsoup4==4.13.5    # via linkchecker, mkdocs-htmlproofer-plugin
 cairocffi==1.7.1          # via cairosvg
 cairosvg==2.8.2           # via mkdocs-ansible (pyproject.toml)
 certifi==2025.8.3         # via requests
-cffi==2.0.0              # via cairocffi
+cffi==2.0.0               # via cairocffi
 charset-normalizer==3.4.3  # via requests
 click==8.2.0              # via mkdocs
 colorama==0.4.6           # via griffe, mkdocs-material
@@ -15,7 +15,7 @@ cssselect2==0.8.0         # via cairosvg
 defusedxml==0.7.1         # via cairosvg
 dnspython==2.7.0          # via linkchecker
 ghp-import==2.1.0         # via mkdocs
-griffe==1.14.0             # via mkdocstrings-python
+griffe==1.14.0            # via mkdocstrings-python
 hjson==3.1.0              # via mkdocs-macros-plugin, super-collections
 htmlmin2==0.1.13          # via mkdocs-minify-plugin
 idna==3.10                # via requests
