@@ -8,7 +8,7 @@ cairosvg==2.8.2           # via mkdocs-ansible (pyproject.toml)
 certifi==2025.8.3         # via requests
 cffi==2.0.0               # via cairocffi
 charset-normalizer==3.4.3  # via requests
-click==8.1.8              # via mkdocs
+click==8.1.8              # via mkdocs, mkdocs-material
 colorama==0.4.6           # via griffe, mkdocs-material
 coverage==7.10.6          # via mkdocs-ansible (pyproject.toml)
 csscompressor==0.9.5      # via mkdocs-minify-plugin
@@ -17,7 +17,7 @@ defusedxml==0.7.1         # via cairosvg
 dnspython==2.7.0          # via linkchecker
 execnet==2.1.1            # via pytest-xdist
 ghp-import==2.1.0         # via mkdocs
-griffe==1.14.0             # via mkdocstrings-python
+griffe==1.14.0            # via mkdocstrings-python
 hjson==3.1.0              # via mkdocs-macros-plugin, super-collections
 htmlmin2==0.1.13          # via mkdocs-minify-plugin
 idna==3.10                # via requests
