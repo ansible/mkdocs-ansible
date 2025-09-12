@@ -5,15 +5,25 @@ ci:
   autoupdate_schedule: quarterly
   skip:
     # https://github.com/pre-commit-ci/issues/issues/55
-    - pip-compile
+
     - renovate-config-validator # container limits
   submodules: true
 repos:
   - repo: meta
     hooks:
       - id: check-useless-excludes
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    rev: 0.8.17
+    hooks:
+      - id: uv-lock
+        alias: lock
+      - id: uv-lock
+        name: "deps: upgrade via uv sync --upgrade"
+        alias: deps
+        args: ["--upgrade"]
+        stages: [manual]
   - repo: https://github.com/renovatebot/pre-commit-hooks
-    rev: 41.91.1
+    rev: 41.107.0
     hooks:
       - id: renovate-config-validator
         alias: renovate
@@ -78,7 +88,7 @@ repos:
       - id: pyupgrade
         args: ["--py39-plus"]
   - repo: https://github.com/pappasam/toml-sort
-    rev: v0.24.2
+    rev: v0.24.3
     hooks:
       - id: toml-sort-fix
         alias: toml
@@ -89,7 +99,7 @@ repos:
       - id: tox-ini-fmt
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.12.11
+    rev: v0.13.0
     hooks:
       - id: ruff
         args:
@@ -99,7 +109,7 @@ repos:
       # - id: ruff-format # must be after ruff
       #   types_or: [python, pyi]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.17.1
+    rev: v1.18.1
     hooks:
       - id: mypy
         # empty args needed in order to match mypy cli behavior
@@ -112,25 +122,3 @@ repos:
         args:
           - --output-format=colorized
         additional_dependencies: ["mkdocs-macros-plugin"]
-  - # keep at bottom as these are slower
-    repo: local
-    hooks:
-      - id: pip-compile
-        name: Check constraints files and requirements
-        files: ^(pyproject\.toml|\.config/.*)$
-        language: python
-        entry: uv pip compile -q --all-extras --python-version=3.11 --output-file=.config/constraints.txt pyproject.toml
-        pass_filenames: false
-        additional_dependencies:
-          - uv>=0.6.6
-      - id: lock
-        name: Update requirements-lock.txt
-        alias: lock
-        always_run: true
-        entry: python3 -m uv pip compile -q --python-version=3.11 --upgrade --output-file=.config/requirements-lock.txt pyproject.toml --strip-extras
-        files: ^(pyproject\.toml|\.config/.*)$
-        language: python
-        pass_filenames: false
-        stages: [manual]
-        additional_dependencies:
-          - uv>=0.6.6

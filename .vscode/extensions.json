@@ -1,0 +1,21 @@
+{
+  "recommendations": [
+    "Tyriar.sort-lines",
+    "charliermarsh.ruff",
+    "esbenp.prettier-vscode",
+    "hbenl.vscode-test-explorer",
+    "ms-python.mypy-type-checker",
+    "ms-python.pylint",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-vscode.live-server",
+    "redhat.ansible",
+    "redhat.vscode-yaml",
+    "ryanluker.vscode-coverage-gutters",
+    "shardulm94.trailing-spaces",
+    "tombi-toml.tombi",
+    "timonwong.shellcheck",
+    "znck.grammarly"
+  ],
+  "unwantedRecommendations": ["tamasfe.even-better-toml"]
+}
