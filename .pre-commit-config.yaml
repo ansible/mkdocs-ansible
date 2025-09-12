@@ -1,17 +1,23 @@
 ---
 ci:
-  # format compatible with commitlint
-  autoupdate_commit_msg: "chore: pre-commit autoupdate"
-  autoupdate_schedule: monthly
-  autofix_commit_msg: "chore: auto fixes from pre-commit.com hooks"
+  # We rely on renovate to update it but there is no way to fully disable it
+  # https://github.com/pre-commit-ci/issues/issues/83
+  autoupdate_schedule: quarterly
   skip:
     # https://github.com/pre-commit-ci/issues/issues/55
     - pip-compile
+    - renovate-config-validator # container limits
   submodules: true
 repos:
   - repo: meta
     hooks:
       - id: check-useless-excludes
+  - repo: https://github.com/renovatebot/pre-commit-hooks
+    rev: 41.91.1
+    hooks:
+      - id: renovate-config-validator
+        alias: renovate
+        args: [--strict]
   - repo: https://github.com/rbubley/mirrors-prettier
     # keep it before yamllint
     rev: v3.6.2
