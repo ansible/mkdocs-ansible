@@ -30,3 +30,4 @@ jobs:
         lint
         pkg
         devel
+        lower

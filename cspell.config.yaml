@@ -5,17 +5,23 @@ dictionaryDefinitions:
     addWords: true
 dictionaries:
   # Use `cspell-cli trace word` to check where a work is defined
-  - en_US
   - bash
-  - words
+  - cpp
+  - en_US
+  - node
   - python
+  - python-common
+  - words
 enabled: true
+useGitignore: true
 ignorePaths:
   - cspell.config.yaml
-  # The requirements file
-  - .config/*.txt
+  - uv.lock
   # Test fixtures generated from outside
   - test/**/*.result
   - src/ansiblelint/schemas/*.json
   # Other
+  - "*.egg-info"
   - "*.svg"
+  - ".vscode/**"
+  - .config/dictionary.txt
