@@ -20,7 +20,7 @@ jobs:
       TOXENV: pkg
 
     steps:
-      - name: Switch to using Python 3.11 by default
+      - name: Switch to using latest released Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.13"
