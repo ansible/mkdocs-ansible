@@ -22,6 +22,7 @@ concurrency:
 jobs:
   tox:
     uses: ansible/team-devtools/.github/workflows/tox.yml@main
+    secrets: inherit
     with:
       jobs_producing_coverage: 5
       min_python: "3.11"
