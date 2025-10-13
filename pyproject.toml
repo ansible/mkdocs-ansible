@@ -105,7 +105,7 @@ branch = true
 concurrency = ["multiprocessing", "thread"]
 parallel = true
 relative_files = true
-source_pkgs = ["mkdocs_ansible"]
+source = ["src/mkdocs_ansible"]
 
 [tool.mypy]
 exclude = "(.config|build|dist|test/local-content|site-packages|~/.pyenv|examples/playbooks/collections|plugins/modules)"
