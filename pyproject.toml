@@ -107,7 +107,6 @@ parallel = true
 relative_files = true
 source_pkgs = ["mkdocs_ansible"]
 
-
 [tool.mypy]
 exclude = "(.config|build|dist|test/local-content|site-packages|~/.pyenv|examples/playbooks/collections|plugins/modules)"
 # https://github.com/python/mypy/issues/12664
