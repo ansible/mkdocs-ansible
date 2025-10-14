@@ -19,6 +19,13 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
   cancel-in-progress: true
 
+permissions:
+  checks: read
+  contents: write
+  id-token: write
+  packages: write
+  pull-requests: write
+
 jobs:
   tox:
     uses: ansible/team-devtools/.github/workflows/tox.yml@main
