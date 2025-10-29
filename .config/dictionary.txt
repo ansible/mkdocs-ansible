@@ -6,7 +6,6 @@ arithmatex
 autohide
 betterem
 codespell
-devel
 fontawesome
 htmlproofer
 inlinehilite
