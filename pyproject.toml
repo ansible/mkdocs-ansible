@@ -1,4 +1,5 @@
-# cspell: ignore junitxml
+# cspell: ignore junitxml tombi
+#:tombi schema.strict = false
 
 [project]
 name = "mkdocs-ansible"
