@@ -46,7 +46,7 @@ dynamic = ["version"]
 
 [project.urls]
 changelog = "https://github.com/ansible/mkdocs-ansible/releases"
-documentation = "https://ansible.readthedocs.io/projects/mkdocs-ansible/"
+documentation = "https://docs.ansible.com/projects/mkdocs-ansible/"
 homepage = "https://github.com/ansible/mkdocs-ansible"
 repository = "https://github.com/ansible/mkdocs-ansible"
 

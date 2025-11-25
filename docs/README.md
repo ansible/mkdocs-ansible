@@ -11,8 +11,8 @@ look and feel for any project related to [Ansible](https://docs.ansible.com/) ec
 
 Some of the projects that use this theme are:
 
-- [ansible-compat](https://ansible.readthedocs.io/projects/compat/)
-- [ansible-dev-tools](https://ansible.readthedocs.io/projects/dev-tools/)
-- [ansible-lint](https://ansible.readthedocs.io/projects/lint/)
-- [ansible-navigator](https://ansible.readthedocs.io/projects/navigator/)
-- [molecule](https://ansible.readthedocs.io/projects/molecule/)
+- [ansible-compat](https://docs.ansible.com/projects/compat/)
+- [ansible-dev-tools](https://docs.ansible.com/projects/dev-tools/)
+- [ansible-lint](https://docs.ansible.com/projects/lint/)
+- [ansible-navigator](https://docs.ansible.com/projects/navigator/)
+- [molecule](https://docs.ansible.com/projects/molecule/)
