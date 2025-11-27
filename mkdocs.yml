@@ -1,6 +1,6 @@
 ---
 site_name: Ansible MkDocs Theme
-site_url: https://ansible.readthedocs.io/projects/mkdocs-ansible/
+site_url: https://docs.ansible.com/projects/mkdocs-ansible/
 site_author: Ansible
 site_description: >-
   This mkdocs theme is based on mkdocs-material and aims to provide a
