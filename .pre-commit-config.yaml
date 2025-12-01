@@ -13,7 +13,7 @@ repos:
     hooks:
       - id: check-useless-excludes
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.9.11
+    rev: 0.9.13
     hooks:
       - id: uv-sync
       - id: uv-lock
@@ -23,7 +23,7 @@ repos:
         args: ["--upgrade"]
         stages: [manual]
   - repo: https://github.com/biomejs/pre-commit
-    rev: "v2.3.7"
+    rev: "v2.3.8"
     hooks:
       - id: biome-check
         name: biome
@@ -87,7 +87,7 @@ repos:
       - id: pyupgrade
         args: ["--py39-plus"]
   - repo: https://github.com/tombi-toml/tombi-pre-commit
-    rev: v0.6.53
+    rev: v0.7.0
     hooks:
       - id: tombi-format
         alias: toml
@@ -95,7 +95,7 @@ repos:
         alias: toml
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.6
+    rev: v0.14.7
     hooks:
       - id: ruff-format
         alias: ruff
