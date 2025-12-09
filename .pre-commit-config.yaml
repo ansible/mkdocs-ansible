@@ -13,7 +13,7 @@ repos:
     hooks:
       - id: check-useless-excludes
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.9.13
+    rev: 0.9.16
     hooks:
       - id: uv-sync
       - id: uv-lock
@@ -87,7 +87,7 @@ repos:
       - id: pyupgrade
         args: ["--py39-plus"]
   - repo: https://github.com/tombi-toml/tombi-pre-commit
-    rev: v0.7.0
+    rev: v0.7.3
     hooks:
       - id: tombi-format
         alias: toml
@@ -95,14 +95,14 @@ repos:
         alias: toml
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.7
+    rev: v0.14.8
     hooks:
       - id: ruff-format
         alias: ruff
       - id: ruff-check
         alias: ruff
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.18.2
+    rev: v1.19.0
     hooks:
       - id: mypy
         # "." and pass_files are used to make pre-commit mypy behave the same as standalone mypy
@@ -110,7 +110,7 @@ repos:
         pass_filenames: false
         additional_dependencies: ["mkdocs-macros-plugin"]
   - repo: https://github.com/pycqa/pylint
-    rev: v4.0.3
+    rev: v4.0.4
     hooks:
       - id: pylint
         args:
