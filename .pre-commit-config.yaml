@@ -30,7 +30,7 @@ repos:
         alias: biome
         args: [--unsafe]
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v9.3.3
+    rev: v9.4.0
     hooks:
       - id: cspell
         entry: bash
@@ -87,7 +87,7 @@ repos:
       - id: pyupgrade
         args: ["--py39-plus"]
   - repo: https://github.com/tombi-toml/tombi-pre-commit
-    rev: v0.7.8
+    rev: v0.7.11
     hooks:
       - id: tombi-format
         alias: toml
