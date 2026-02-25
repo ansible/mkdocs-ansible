@@ -17,7 +17,7 @@ __all__ = ("__version__",)
 
 def install_from_adt(name: str) -> str:
     """install_from_adt macro."""
-    result = f"""!!! Recommendation
+    return f"""!!! Recommendation
 
     The **recommended** approach to install `{name}` is using the
     `ansible-dev-tools` package.
@@ -31,7 +31,6 @@ def install_from_adt(name: str) -> str:
     pip3 install ansible-dev-tools
     ```
     """
-    return result
 
 
 def define_env(env: MacrosPlugin) -> None:
