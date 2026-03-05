@@ -23,7 +23,7 @@ repos:
         args: ["--upgrade"]
         stages: [manual]
   - repo: https://github.com/biomejs/pre-commit
-    rev: "v2.4.4"
+    rev: "v2.4.5"
     hooks:
       - id: biome-check
         name: biome
@@ -87,7 +87,7 @@ repos:
       - id: pyupgrade
         args: ["--py39-plus"]
   - repo: https://github.com/tombi-toml/tombi-pre-commit
-    rev: v0.7.33
+    rev: v0.9.0
     hooks:
       - id: tombi-format
         alias: toml
