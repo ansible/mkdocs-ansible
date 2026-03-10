@@ -10,5 +10,4 @@ rules:
   octal-values:
     forbid-implicit-octal: true
     forbid-explicit-octal: true
-ignore: |
-  .tox
+ignore-from-file: .gitignore
