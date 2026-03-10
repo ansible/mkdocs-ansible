@@ -1,4 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>ansible/actions//config/renovate.json"]
+  "extends": ["github>ansible/actions//config/renovate.json"],
+  "packageRules": [
+    {
+      "description": "Bump minimum versions for all Python deps (project.dependencies and dependency-groups)",
+      "matchCategories": ["python"],
+      "rangeStrategy": "bump"
+    }
+  ]
 }
