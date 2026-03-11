@@ -18,6 +18,8 @@
       "branchTopic": "python-deps-bump",
       "commitMessagePrefix": "fix(deps): bump python dependencies ",
       "description": "Bump minimum versions for all Python deps (project.dependencies and dependency-groups)",
+      "groupName": "bump",
+      "groupSlug": "bump",
       "matchCategories": ["python"],
       "rangeStrategy": "bump"
     }
