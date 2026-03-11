@@ -30,11 +30,11 @@ dependencies = [
   "linkchecker>=10.6.0",
   "markdown-exec>=1.12.1",
   "markdown-include>=0.8.1",
-  "mkdocs>=1.6.1",
+  "mkdocs>=1.6.1,<2.0.0",
   "mkdocs-gen-files>=0.6.0",
   "mkdocs-htmlproofer-plugin>=1.5.0",
   "mkdocs-macros-plugin>=1.5.0",
-  "mkdocs-material>=9.7.4",
+  "mkdocs-material>=9.7.5",
   "mkdocs-material-extensions>=1.3.1",
   "mkdocs-minify-plugin>=0.8.0",
   "mkdocstrings>=1.0.3",
@@ -96,7 +96,7 @@ build-backend = "setuptools.build_meta"
 # indention is a typo in ruamel.yaml's API
 ignore-words-list = "indention"
 # Until https://github.com/codespell-project/codespell/issues/1887 is addressed:
-skip = ".tox,.mypy_cache,build,.git,.eggs,uv.lock,pip-wheel-metadata,site,_readthedocs,node_modules"
+skip = ".tox,.mypy_cache,build,.git,.eggs,uv.lock,pip-wheel-metadata,site,_readthedocs,node_modules,.venv"
 
 # Keep this default because xml/report do not know to use load it from config file:
 # data_file = ".coverage"
