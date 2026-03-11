@@ -3,6 +3,20 @@
   "extends": ["github>ansible/actions//config/renovate.json"],
   "packageRules": [
     {
+      "description": "Disable updates to requires-python field",
+      "enabled": false,
+      "matchDepTypes": ["requires-python"],
+      "matchManagers": ["pep621"]
+    },
+    {
+      "description": "Disable updates to build-system requires",
+      "enabled": false,
+      "matchDepTypes": ["build-system.requires"],
+      "matchManagers": ["pep621"]
+    },
+    {
+      "branchTopic": "python-deps-bump",
+      "commitMessagePrefix": "fix(deps): bump python dependencies ",
       "description": "Bump minimum versions for all Python deps (project.dependencies and dependency-groups)",
       "matchCategories": ["python"],
       "rangeStrategy": "bump"
