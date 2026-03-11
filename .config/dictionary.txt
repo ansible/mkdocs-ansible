@@ -17,6 +17,7 @@ linkchecker
 magiclink
 mkdocstrings
 posargs
+prek
 pymdownx
 showlocals
 smartsymbols
