@@ -64,10 +64,10 @@ dev = [
   "pyyaml>=6.0.3",
   "ruamel-yaml>=0.19.1",
   "ruamel-yaml-clib>=0.2.15; python_full_version < '3.14'",
-  "ruff>=0.15.5",
-  "tox>=4.49.0",
+  "ruff>=0.15.6",
+  "tox>=4.49.1",
   "tox-extra>=2.2.0",
-  "tox-uv>=1.33.1",
+  "tox-uv>=1.33.4",
   "types-jsonschema>=4.26.0.20260202",
   "types-pyyaml>=6.0.12.20250915",
 ]
@@ -79,7 +79,7 @@ lint = [
   "prek>=0.3.5",
   "pylint>=4.0.5",
   "pytest>=9.0.2",
-  "setuptools>=82.0.0",
+  "setuptools>=82.0.1",
   "tombi>=0.9.4",
   "yamllint>=1.38.0",
 ]
