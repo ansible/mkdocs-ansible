@@ -64,11 +64,11 @@ dev = [
   "pyyaml>=6.0.3",
   "ruamel-yaml>=0.19.1",
   "ruamel-yaml-clib>=0.2.15; python_full_version < '3.14'",
-  "ruff>=0.15.7",
-  "tox>=4.50.3",
+  "ruff>=0.15.8",
+  "tox>=4.51.0",
   "tox-extra>=2.2.0",
   "tox-uv>=1.33.4",
-  "types-jsonschema>=4.26.0.20260202",
+  "types-jsonschema>=4.26.0.20260325",
   "types-pyyaml>=6.0.12.20250915",
 ]
 docs = ["mkdocs>=1.6.1"]
@@ -76,14 +76,14 @@ lint = [
   "codespell>=2.4.2",
   "mypy>=1.19.1",
   "pip>=26.0.1",
-  "prek>=0.3.6",
+  "prek>=0.3.8",
   "pylint>=4.0.5",
   "pytest>=9.0.2",
   "setuptools>=82.0.1",
-  "tombi>=0.9.8",
+  "tombi>=0.9.9",
   "yamllint>=1.38.0",
 ]
-pkg = ["build>=1.4.0", "pip>=26.0.1", "twine>=6.2.0"]
+pkg = ["build>=1.4.2", "pip>=26.0.1", "twine>=6.2.0"]
 
 [build-system]
 requires = [
