@@ -1147,23 +1147,23 @@ dev = [
     { name = "pyyaml", specifier = ">=6.0.3" },
     { name = "ruamel-yaml", specifier = ">=0.19.1" },
     { name = "ruamel-yaml-clib", marker = "python_full_version < '3.14'", specifier = ">=0.2.15" },
-    { name = "ruff", specifier = ">=0.15.13" },
+    { name = "ruff", specifier = ">=0.15.14" },
     { name = "tox", specifier = ">=4.54.0" },
     { name = "tox-extra", specifier = ">=2.2.0" },
     { name = "tox-uv", specifier = ">=1.35.2" },
-    { name = "types-jsonschema", specifier = ">=4.26.0.20260508" },
-    { name = "types-pyyaml", specifier = ">=6.0.12.20260510" },
+    { name = "types-jsonschema", specifier = ">=4.26.0.20260518" },
+    { name = "types-pyyaml", specifier = ">=6.0.12.20260518" },
 ]
 docs = [{ name = "mkdocs", specifier = ">=1.6.1" }]
 lint = [
     { name = "codespell", specifier = ">=2.4.2" },
-    { name = "mypy", specifier = ">=2.0.0" },
+    { name = "mypy", specifier = ">=2.1.0" },
     { name = "pip", specifier = ">=26.1.1" },
-    { name = "prek", specifier = ">=0.4.0" },
+    { name = "prek", specifier = ">=0.4.1" },
     { name = "pylint", specifier = ">=4.0.5" },
     { name = "pytest", specifier = ">=9.0.3" },
     { name = "setuptools", specifier = ">=82.0.1" },
-    { name = "tombi", specifier = ">=0.11.4" },
+    { name = "tombi", specifier = ">=0.11.7" },
     { name = "yamllint", specifier = ">=1.38.0" },
 ]
 pkg = [
