@@ -36,7 +36,7 @@ repos:
       - id: yamllint
         priority: 0
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.11.19
+    rev: 0.11.21
     hooks:
       - id: uv-sync
       - id: uv-lock
@@ -53,7 +53,7 @@ repos:
         alias: biome
         args: [--unsafe]
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.37.2
+    rev: 0.37.3
     hooks:
       - id: check-github-workflows
   - repo: https://github.com/pre-commit/pre-commit-hooks.git
