@@ -26,9 +26,9 @@ classifiers = [
 ]
 dependencies = [
   "cairosvg>=2.9.0",
-  "cffi>=2.0.0",
+  "cffi>=2.1.0",
   "linkchecker>=10.6.0",
-  "markdown-exec>=1.12.1",
+  "markdown-exec>=1.12.3",
   "markdown-include>=0.8.1",
   "mkdocs>=1.6.1,<2.0.0",
   "mkdocs-gen-files>=0.6.1",
@@ -37,10 +37,10 @@ dependencies = [
   "mkdocs-material>=9.7.6",
   "mkdocs-material-extensions>=1.3.1",
   "mkdocs-minify-plugin>=0.8.0",
-  "mkdocstrings>=1.0.4",
-  "mkdocstrings-python>=2.0.4",
+  "mkdocstrings>=1.0.6",
+  "mkdocstrings-python>=2.0.5",
   "pillow>=12.2.0",
-  "pymdown-extensions>=10.21.3",
+  "pymdown-extensions>=11.0.1",
 ]
 dynamic = ["version"]
 
@@ -55,17 +55,17 @@ ansible = "mkdocs_ansible"
 
 [dependency-groups]
 dev = [
-  "coverage>=7.14.1",  # indirect
+  "coverage>=7.15.0",  # indirect
   "packaging>=26.2",
-  "pytest>=9.1.0",
+  "pytest>=9.1.1",
   "pytest-plus>=0.8.1",
   "pytest-sugar>=1.1.1",
   "pytest-xdist>=3.8.0",  # avoid psutil and setproctitle here due to build issues
   "pyyaml>=6.0.3",
   "ruamel-yaml>=0.19.1",
   "ruamel-yaml-clib>=0.2.15; python_full_version < '3.14'",
-  "ruff>=0.15.17",
-  "tox>=4.55.1",
+  "ruff>=0.15.21",
+  "tox>=4.56.4",
   "tox-extra>=2.2.0",
   "tox-uv>=1.35.2",
   "types-jsonschema>=4.26.0.20260518",
@@ -74,16 +74,16 @@ dev = [
 docs = ["mkdocs>=1.6.1"]
 lint = [
   "codespell>=2.4.2",
-  "mypy>=2.1.0",
+  "mypy>=2.2.0",
   "pip>=26.1.2",
-  "prek>=0.4.5",
+  "prek>=0.4.9",
   "pylint>=4.0.6",
-  "pytest>=9.1.0",
-  "setuptools>=82.0.1",
-  "tombi>=1.1.3",
+  "pytest>=9.1.1",
+  "setuptools>=83.0.0",
+  "tombi>=1.2.0",
   "yamllint>=1.38.0",
 ]
-pkg = ["build>=1.5.0", "pip>=26.1.2", "twine>=6.2.0"]
+pkg = ["build>=1.5.1", "pip>=26.1.2", "twine>=6.2.0"]
 
 [build-system]
 requires = [
