@@ -170,13 +170,7 @@ ignore-paths = [
 jobs = 0
 
 [tool.pytest]
-addopts = [
-  "--durations-min=1.0",
-  "--durations=10",
-  "--failed-first",
-  "-p",
-  "no:pytest_cov"
-]
+addopts = ["--durations-min=1.0", "--durations=10", "--failed-first", "-p", "no:pytest_cov"]
 testpaths = ["test"]
 
 [tool.ruff]
@@ -225,19 +219,7 @@ requires = ["setuptools>=65.3", "tox>=4.47.3", "tox-extra>=2.2", "tox-uv>=1.32"]
 skip_missing_interpreters = true
 
 [tool.tox.env.deps]
-commands = [
-  [
-    "prek",
-    "run",
-    "--all-files",
-    "--show-diff-on-failure",
-    "--hook-stage",
-    "manual",
-    "deps"
-  ],
-  ["prek", "autoupdate"],
-  ["tox", "-e", "lint"]
-]
+commands = [["prek", "run", "--all-files", "--show-diff-on-failure", "--hook-stage", "manual", "deps"], ["prek", "autoupdate"], ["tox", "-e", "lint"]]
 commands_pre = []
 dependency_groups = ["lint"]
 description = "Bump all test dependencies"
@@ -330,35 +312,7 @@ commands = [
 commands_pre = [["sh", "-c", "rm -f {env_dir}/.coverage.* 2>/dev/null || true"]]
 description = """Run the tests: py{py_dot_ver}"""
 package = "editable"
-pass_env = [
-  "CI",
-  "CONTAINER_*",
-  "CURL_CA_BUNDLE",
-  "FORCE_COLOR",
-  "DOCKER_*",
-  "GITHUB_*",
-  "HOME",
-  "LANG",
-  "LC_*",
-  "NO_COLOR",
-  "PRE_COMMIT_HOME",
-  "PYTEST_*",
-  "PYTEST_REQPASS",
-  "PYTHON*",
-  "PYTHONBREAKPOINT",
-  "PYTHONIOENCODING",
-  "PYTHONPYCACHEPREFIX",
-  "PY_COLORS",
-  "REQUESTS_CA_BUNDLE",
-  "RTD_TOKEN",
-  "SETUPTOOLS_SCM_DEBUG",
-  "SSH_AUTH_SOCK",
-  "TERM",
-  "USER",
-  "XDG_RUNTIME_DIR",
-  "SSL_CERT_FILE",
-  "UV_*"
-]
+pass_env = ["CI", "CONTAINER_*", "CURL_CA_BUNDLE", "FORCE_COLOR", "DOCKER_*", "GITHUB_*", "HOME", "LANG", "LC_*", "NO_COLOR", "PRE_COMMIT_HOME", "PYTEST_*", "PYTEST_REQPASS", "PYTHON*", "PYTHONBREAKPOINT", "PYTHONIOENCODING", "PYTHONPYCACHEPREFIX", "PY_COLORS", "REQUESTS_CA_BUNDLE", "RTD_TOKEN", "SETUPTOOLS_SCM_DEBUG", "SSH_AUTH_SOCK", "TERM", "USER", "XDG_RUNTIME_DIR", "SSL_CERT_FILE", "UV_*"]
 runner = "uv-venv-lock-runner"
 
 [tool.tox.env_run_base.set_env]
