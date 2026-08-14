@@ -26,7 +26,7 @@ classifiers = [
 ]
 dependencies = [
   "cairosvg>=2.9.0",
-  "cffi>=2.1.0",
+  "cffi>=2.1.1",
   "linkchecker>=10.6.0",
   "markdown-exec>=1.12.3",
   "markdown-include>=0.8.1",
@@ -34,12 +34,12 @@ dependencies = [
   "mkdocs-gen-files>=0.6.1",
   "mkdocs-htmlproofer-plugin>=1.5.0",
   "mkdocs-macros-plugin>=1.5.0",
-  "mkdocs-material>=9.7.6",
+  "mkdocs-material>=9.7.7",
   "mkdocs-material-extensions>=1.3.1",
   "mkdocs-minify-plugin>=0.8.0",
   "mkdocstrings>=1.0.6",
   "mkdocstrings-python>=2.0.5",
-  "pillow>=12.2.0",
+  "pillow>=12.3.0",
   "pymdown-extensions>=11.0.1",
 ]
 dynamic = ["version"]
@@ -55,8 +55,8 @@ ansible = "mkdocs_ansible"
 
 [dependency-groups]
 dev = [
-  "coverage>=7.15.0",  # indirect
-  "packaging>=26.2",
+  "coverage>=7.15.4",  # indirect
+  "packaging>=26.3",
   "pytest>=9.1.1",
   "pytest-plus>=0.8.1",
   "pytest-sugar>=1.1.1",
@@ -64,26 +64,26 @@ dev = [
   "pyyaml>=6.0.3",
   "ruamel-yaml>=0.19.1",
   "ruamel-yaml-clib>=0.2.15; python_full_version < '3.14'",
-  "ruff>=0.15.21",
-  "tox>=4.56.4",
+  "ruff>=0.16.2",
+  "tox>=4.59.0",
   "tox-extra>=2.2.0",
-  "tox-uv>=1.35.2",
+  "tox-uv>=1.36.0",
   "types-jsonschema>=4.26.0.20260518",
-  "types-pyyaml>=6.0.12.20260518",
+  "types-pyyaml>=6.0.12.20260724",
 ]
 docs = ["mkdocs>=1.6.1"]
 lint = [
-  "codespell>=2.4.2",
-  "mypy>=2.2.0",
-  "pip>=26.1.2",
-  "prek>=0.4.9",
-  "pylint>=4.0.6",
+  "codespell>=2.4.3",
+  "mypy>=2.3.0",
+  "pip>=26.2.1",
+  "prek>=0.4.13",
+  "pylint>=4.0.7",
   "pytest>=9.1.1",
   "setuptools>=83.0.0",
-  "tombi>=1.2.0",
+  "tombi>=1.2.10",
   "yamllint>=1.38.0",
 ]
-pkg = ["build>=1.5.0,!=1.5.1", "pip>=26.1.2", "twine>=6.2.0"]
+pkg = ["build>=1.5.0,!=1.5.1", "pip>=26.2.1", "twine>=7.0.0"]
 
 [build-system]
 requires = [
@@ -170,13 +170,7 @@ ignore-paths = [
 jobs = 0
 
 [tool.pytest]
-addopts = [
-  "--durations-min=1.0",
-  "--durations=10",
-  "--failed-first",
-  "-p",
-  "no:pytest_cov"
-]
+addopts = ["--durations-min=1.0", "--durations=10", "--failed-first", "-p", "no:pytest_cov"]
 testpaths = ["test"]
 
 [tool.ruff]
@@ -225,19 +219,7 @@ requires = ["setuptools>=65.3", "tox>=4.47.3", "tox-extra>=2.2", "tox-uv>=1.32"]
 skip_missing_interpreters = true
 
 [tool.tox.env.deps]
-commands = [
-  [
-    "prek",
-    "run",
-    "--all-files",
-    "--show-diff-on-failure",
-    "--hook-stage",
-    "manual",
-    "deps"
-  ],
-  ["prek", "autoupdate"],
-  ["tox", "-e", "lint"]
-]
+commands = [["prek", "run", "--all-files", "--show-diff-on-failure", "--hook-stage", "manual", "deps"], ["prek", "autoupdate"], ["tox", "-e", "lint"]]
 commands_pre = []
 dependency_groups = ["lint"]
 description = "Bump all test dependencies"
@@ -330,35 +312,7 @@ commands = [
 commands_pre = [["sh", "-c", "rm -f {env_dir}/.coverage.* 2>/dev/null || true"]]
 description = """Run the tests: py{py_dot_ver}"""
 package = "editable"
-pass_env = [
-  "CI",
-  "CONTAINER_*",
-  "CURL_CA_BUNDLE",
-  "FORCE_COLOR",
-  "DOCKER_*",
-  "GITHUB_*",
-  "HOME",
-  "LANG",
-  "LC_*",
-  "NO_COLOR",
-  "PRE_COMMIT_HOME",
-  "PYTEST_*",
-  "PYTEST_REQPASS",
-  "PYTHON*",
-  "PYTHONBREAKPOINT",
-  "PYTHONIOENCODING",
-  "PYTHONPYCACHEPREFIX",
-  "PY_COLORS",
-  "REQUESTS_CA_BUNDLE",
-  "RTD_TOKEN",
-  "SETUPTOOLS_SCM_DEBUG",
-  "SSH_AUTH_SOCK",
-  "TERM",
-  "USER",
-  "XDG_RUNTIME_DIR",
-  "SSL_CERT_FILE",
-  "UV_*"
-]
+pass_env = ["CI", "CONTAINER_*", "CURL_CA_BUNDLE", "FORCE_COLOR", "DOCKER_*", "GITHUB_*", "HOME", "LANG", "LC_*", "NO_COLOR", "PRE_COMMIT_HOME", "PYTEST_*", "PYTEST_REQPASS", "PYTHON*", "PYTHONBREAKPOINT", "PYTHONIOENCODING", "PYTHONPYCACHEPREFIX", "PY_COLORS", "REQUESTS_CA_BUNDLE", "RTD_TOKEN", "SETUPTOOLS_SCM_DEBUG", "SSH_AUTH_SOCK", "TERM", "USER", "XDG_RUNTIME_DIR", "SSL_CERT_FILE", "UV_*"]
 runner = "uv-venv-lock-runner"
 
 [tool.tox.env_run_base.set_env]
