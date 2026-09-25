@@ -1,6 +1,7 @@
 **/*.egg-info
 .DS_Store
 .tox
+.venv
 __pycache__
 build/
 dist
